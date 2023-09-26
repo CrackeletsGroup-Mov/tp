@@ -110,7 +110,7 @@ fun SignUp() {
         )
 
 
-        Button(onClick = {}) {
+        Button(onClick = { }) {
             Text(text = "SignUp")
         }
 
