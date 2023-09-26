@@ -4,7 +4,10 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
@@ -43,6 +46,7 @@ fun SignUp() {
             imageModel = { R.drawable.logo },
             imageOptions = ImageOptions(contentScale = ContentScale.Fit),
             modifier = Modifier.size(300.dp)
+
         )
 
         //OutlinedTextField: cajita de texto que se puede editar
@@ -56,7 +60,11 @@ fun SignUp() {
 
             placeholder = { Text(text = "Username") },
 
-            modifier= Modifier.fillMaxWidth() //para que ocupe tod el ancho disponible
+            modifier= Modifier
+                .widthIn(max = 250.dp) // Establece un ancho máximo de 200 dp
+                .heightIn(max = 70.dp) // Establece un ancho máximo de 200 dp
+                .fillMaxWidth() //para que ocupe tod el ancho disponible
+                .padding(0.dp,7.dp)
         )
 
         OutlinedTextField(
@@ -69,8 +77,11 @@ fun SignUp() {
             visualTransformation = PasswordVisualTransformation(),
             placeholder = { Text(text = "Password") },
 
-            modifier= Modifier.fillMaxWidth() //para que ocupe tod el ancho disponible
-
+            modifier= Modifier
+                .widthIn(max = 250.dp) // Establece un ancho máximo de 200 dp
+                .heightIn(max = 70.dp) // Establece un ancho máximo de 200 dp
+                .fillMaxWidth() //para que ocupe tod el ancho disponible
+                .padding(0.dp,7.dp)
         )
 
         OutlinedTextField(
@@ -82,7 +93,11 @@ fun SignUp() {
             },
             placeholder = { Text(text = "Name") },
 
-            modifier= Modifier.fillMaxWidth() //para que ocupe tod el ancho disponible
+            modifier= Modifier
+                .widthIn(max = 250.dp) // Establece un ancho máximo de 200 dp
+                .heightIn(max = 70.dp) // Establece un ancho máximo de 200 dp
+                .fillMaxWidth() //para que ocupe tod el ancho disponible
+                .padding(0.dp,7.dp)
         )
 
         OutlinedTextField(
@@ -94,7 +109,11 @@ fun SignUp() {
             },
             placeholder = { Text(text = "Email") },
 
-            modifier= Modifier.fillMaxWidth() //para que ocupe tod el ancho disponible
+            modifier= Modifier
+                .widthIn(max = 250.dp) // Establece un ancho máximo de 200 dp
+                .heightIn(max = 70.dp) // Establece un ancho máximo de 200 dp
+                .fillMaxWidth() //para que ocupe tod el ancho disponible
+                .padding(0.dp,7.dp)
         )
 
         OutlinedTextField(
@@ -106,7 +125,11 @@ fun SignUp() {
             },
             placeholder = { Text(text = "DNI") },
 
-            modifier= Modifier.fillMaxWidth() //para que ocupe tod el ancho disponible
+            modifier= Modifier
+                .widthIn(max = 250.dp) // Establece un ancho máximo de 200 dp
+                .heightIn(max = 70.dp) // Establece un ancho máximo de 200 dp
+                .fillMaxWidth() //para que ocupe tod el ancho disponible
+                .padding(0.dp,7.dp)
         )
 
 
