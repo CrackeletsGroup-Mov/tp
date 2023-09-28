@@ -6,10 +6,5 @@ data class Event(  //datos de cada heroe
     val id:String,
     val name: String,
     val description:String,//de tipo biografia
-    val address:String,
-    val image:EventImage
-)
-
-data class EventImage( //detalla esta informacion con sus propios datos
-    val url:String
+    val address:String
 )
